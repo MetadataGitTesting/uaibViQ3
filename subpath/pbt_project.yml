@@ -41,10 +41,11 @@ sqlModels:
   .prophecy/metadata/sqlmodels/newmodel:
     name: newmodel
     schema: null
-    description: desc model
+    description: null
     author: vqsnynbu.mfgmwbmc@pqyojcmn.com
     files:
     - subpath/newmodel.sql
+    - newmodel.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -82,7 +83,7 @@ sqlTests:
     author: vqsnynbu.mfgmwbmc@pqyojcmn.com
     files:
     - test2.sql
-    - .prophecy/sqltests/test2.json
+    - .prophecy/sqltests/test2-renamed.json
     testType: SingularDataTest
     createdAt: '2024-12-08 20:23:03'
 sqlMacros:
@@ -94,6 +95,14 @@ sqlMacros:
     files:
     - sources.yml
     createdAt: '2024-12-08 20:23:03'
+  .prophecy/metadata/sqlmacros/macro2:
+    name: macro2
+    macroType: macro2
+    description: null
+    author: vqsnynbu.mfgmwbmc@pqyojcmn.com
+    files:
+    - sources.yml
+    createdAt: '2024-12-08 20:23:05'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/seed1:
     name: seed1
@@ -103,14 +112,22 @@ sqlSeeds:
     files:
     - sources.yml
     createdAt: '2024-12-08 20:23:03'
+  .prophecy/metadata/sqlseeds/seed2:
+    name: seed2
+    schema: null
+    description: null
+    author: vqsnynbu.mfgmwbmc@pqyojcmn.com
+    files:
+    - seed2.sql
+    createdAt: '2024-12-08 20:23:05'
 sqlSources:
-  .prophecy/metadata/sqlsources/source:
-    name: source
-    description: source desc
+  .prophecy/metadata/sqlsources/source2:
+    name: source2
+    description: null
     author: vqsnynbu.mfgmwbmc@pqyojcmn.com
     files:
     - sources.yml
-    createdAt: '2024-12-08 20:23:03'
+    createdAt: '2024-12-08 20:23:05'
     tables: []
   .prophecy/metadata/sqlsources/multipleFileSource:
     name: multipleFileSource
@@ -118,7 +135,6 @@ sqlSources:
     author: vqsnynbu.mfgmwbmc@pqyojcmn.com
     files:
     - sources1.yml
-    - mfs/src/multipleFileSource.yml
     createdAt: '2024-12-08 20:23:03'
     tables:
     - name: table1
